@@ -39,7 +39,42 @@ Click **"Manage Jenkins"**, and then click **"Configure System"**, jump to **"O
 ![](https://github.com/cjunwchen/jekins-okd311/blob/master/images/jenkins-okd-plugin.png)
 - Cluster name: put a name
 - API Server URL: this is url for OpenShift management url
-- Credientials: the crediential created above
+- Credientials: the crediential created above (step 4)
+
+# 7. Test out
+
+Create a pipeline, use the pipeline script below
+
+	openshift.withCluster( 'okd-master1' ) {
+		stage "get info…."   
+			/** Selectors are a core concept in the DSL. They allow the user to invoke operations **/
+			/** on group of objects which satisfy a given criteria. **/
+	
+			// Create a Selector capable of selecting all service accounts in mycluster's default project
+			def saSelector = openshift.selector( 'serviceaccount' )
+			
+			// Prints `oc describe serviceaccount` to Jenkins console
+			saSelector.describe()
+	
+			// Selectors also allow you to easily iterate through all objects they currently select.
+			saSelector.withEach { // The closure body will be executed once for each selected object.
+				// The 'it' variable will be bound to a Selector which selects a single
+        			// object which is the focus of the iteration.
+        			echo "Service account: ${it.name()} is defined in ${openshift.project()}"
+			}
+	
+			// Prints a list of current service accounts to the console
+			echo "There are ${saSelector.count()} service accounts in project ${openshift.project()}"
+			echo "They are named: ${saSelector.names()}"
+		
+		stage "building…."   
+			echo "building…."
+	   
+		stage "deploying…."   
+			echo "deploying…."
+	}
+
+Trigger the pipeline by click "Build Now"
 
 
 

@@ -28,6 +28,14 @@ Login into Jenkins, click **"Credentials"**, next to **"Jenkins"** within the 
 
 ![](https://github.com/cjunwchen/jekins-okd311/blob/master/images/jenkins-okd311.png)
  
+# 5. Install OpenShift plugin in Jenkins
+
+Click **"Manage Jenkins**, and then click **"Manage Plugin"**, install **"OpenShift Client Plugin"**
+
+# 6. Configure OpenShift Client Plugin
+
+Click **"Manage Jenkins"**, and then click **"Configure System"**, jump to **"OpenShift Client Plugin"**,
+
 
 
   

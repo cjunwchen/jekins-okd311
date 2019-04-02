@@ -1,7 +1,7 @@
 # 1. Install Jenkins
 Install Jenkins is straight forward, just google it and follow the instruction
 
-# 2. Service Account Creation within OpenShift
+# 2. Create Service Account in OpenShift
 Login into OpenShift cluster
 
 	oc login
@@ -22,7 +22,7 @@ Create service account
 	oc serviceaccounts get-token jenkins -n ci
 	#Copy the returned value as it will be needed in the following sections
 
-# 4. Config credential in Jenkins
+# 4. Config credential in Jenkins server
 
 Login into Jenkins, click **"Credentials"**, next to **"Jenkins"** within the **"Stores scoped to Jenkins"**, select **"(global)"**, and click on the *left-hand* side, select **"Add Credentials"**. Copy the token obtained above and paste it in "Token" below.
 

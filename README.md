@@ -26,7 +26,7 @@ Create service account
 
 Login into Jenkins, click **Credentials**, next to **Jenkins** within the **Stores scoped to Jenkins**, select **(global)**, and click on the *left-hand* side, select **Add Credentials**. Copy the token obtained above and paste it in "Token" below.
 
-
+![](https://github.com/cjunwchen/jekins-okd311/blob/master/images/jenkins-okd311.png)
  
 
 

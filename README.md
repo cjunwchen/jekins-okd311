@@ -34,9 +34,9 @@ Click **"Manage Jenkins**, and then click **"Manage Plugin"**, install **"OpenSh
 
 # 6. Configure OpenShift Client Plugin
 
-Click **"Manage Jenkins"**, and then click **"Configure System"**, jump to **"OpenShift Client Plugin"**,
-![](https://github.com/cjunwchen/jekins-okd311/blob/master/images/jenkins-okd-plugin.png)
+Click **"Manage Jenkins"**, and then click **"Configure System"**, jump to **"OpenShift Client Plugin"**
 
+![](https://github.com/cjunwchen/jekins-okd311/blob/master/images/jenkins-okd-plugin.png)
 - Cluster name: put a name
 - API Server URL: this is url for OpenShift management url
 - Credientials: the crediential created above

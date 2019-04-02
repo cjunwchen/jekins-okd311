@@ -41,7 +41,10 @@ Click **"Manage Jenkins"**, and then click **"Configure System"**, jump to **"O
 - API Server URL: this is url for OpenShift management url
 - Credientials: the crediential created above (step 4)
 
-# 7. Test out
+# 7. Install oc binary client in Jenkins server
+Download the oc client into Jenkins server, extract the tar file and copy the oc binary file into /usr/bin directory
+
+# 8. Test out
 
 Create a pipeline, use the pipeline script below
 

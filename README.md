@@ -74,7 +74,7 @@ Create a pipeline, use the pipeline script below
 			echo "deploying…."
 	}
 
-Trigger the pipeline by click "Build Now"
+Trigger the pipeline by click "Build Now". The sample [Jenkinsfile](https://github.com/cjunwchen/jekins-okd311/blob/master/Jenkinsfile) here is for creating a new app.
 
 
 

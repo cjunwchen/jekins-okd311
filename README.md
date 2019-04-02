@@ -24,7 +24,10 @@ Create service account
 
 # 4. Config credential in Jenkins
 
-Login into Jenkins, navigate to 
+Login into Jenkins, click **Credentials**, next to **Jenkins** within the **Stores scoped to Jenkins**, select **(global)**, and click on the *left-hand* side, select **Add Credentials**. Copy the token obtained above and paste it in "Token" below.
+
+
+ 
 
 
   

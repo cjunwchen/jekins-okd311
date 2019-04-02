@@ -42,7 +42,7 @@ Click **"Manage Jenkins"**, and then click **"Configure System"**, jump to **"O
 - Credientials: the crediential created above (step 4)
 
 # 7. Install oc binary client in Jenkins server
-Login into Jenkins server, download the oc client from Openshift [github link](https://github.com/openshift/origin/releases/),  extract the tar file and copy the oc binary file into /usr/bin directory
+Login into Jenkins server, download the oc client from [Openshift github link](https://github.com/openshift/origin/releases/),  extract the tar file and copy the oc binary file into /usr/bin directory
 
 # 8. Test out
 

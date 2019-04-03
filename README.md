@@ -79,7 +79,8 @@ Create a pipeline, use the pipeline script below
 
 Trigger the pipeline by click "Build Now". The sample [Jenkinsfile](https://github.com/cjunwchen/jekins-okd311/blob/master/Jenkinsfile) here is for creating a new app.
 
-
+# 9. Reference
+[OpenShift Jenkins Client Plugin](https://github.com/openshift/jenkins-client-plugin/blob/master/README.md#setting-up-credentials)
 
 
 
